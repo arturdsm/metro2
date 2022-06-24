@@ -84,7 +84,7 @@ type BaseSegment struct {
 
 	// Report the specific code that identifies the account classification.
 	// Exhibit 1 provides a numeric listing of type codes that specify industry usage, and Exhibit 2 provides an alphabetic listing of type codes within their corresponding Portfolio Types.
-	AccountType string `json:"accountType" validate:"required"`
+	AccountType string `json:"accountType,omitempty" validate:"required"`
 
 	// Report the date the account was originally opened.
 	// Retain the original Date Opened regardless of future activity, such as transfer, refinance, lost or stolen card, etc.
